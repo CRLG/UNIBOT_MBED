@@ -11,7 +11,7 @@
 
 //___________________________________________________________________________
  /*!
-   \brief Point d'entr√©e pour l'execution de toute l'application
+   \brief Point d'entrÈe pour l'execution de toute l'application
 
    \param --
    \return --
@@ -27,10 +27,10 @@ void CGlobale::ModeAutonome(void)
 
    m_match.Initialise();
 
-   // Initialise une IRQ sur r√©ception RS232 de la cam√©ra
-   // Ligne ci-dessous mise en commentaire volontairement tant que la pinoche RX est en l'air (pour √©viter d'avoir des IRQ parasites)
+   // Initialise une IRQ sur rÈception RS232 de la camÈra
+   // Ligne ci-dessous mise en commentaire volontairement tant que la pinoche RX est en l'air (pour Èviter d'avoir des IRQ parasites)
    // TODO: √  d√©commenter d√®s que la cam√©ra sera branch√©e
-   //_rs232_camera_rx.attach(&Application, &CGlobale::ReceiveRS232_Camera);  	// Callback sur r√©ception d'une donn√©e sur la RS232
+   //_rs232_camera_rx.attach(&Application, &CGlobale::ReceiveRS232_Camera);  	// Callback sur rÈception d'une donnÈe sur la RS232
   
    periodicTick.attach(&Application, &CGlobale::IRQ_Tick_ModeAutonome, (float(PERIODE_TICK)/1000.0f));
 
@@ -172,7 +172,7 @@ void CGlobale::CheckReceptionTrameCamera(void)
 {
   // ___________________________
   if  (m_camera.m_CAM_RESULT_TRACKING.isNewTrame() ) {
-    // TODO : √  relier avec les entr√©es du mod√®le SIMULINK
+    // TODO : √  relier avec les entrees du modele SIMULINK
     // modele.IN_xxx = m_camera.m_CAM_RESULT_TRACKING.Pos_X;
     // modele.IN_xxx = m_camera.m_CAM_RESULT_TRACKING.Pos_Y;
   }

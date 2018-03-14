@@ -74,23 +74,27 @@ cde_max = 100;				// %	Commande maximum normalisée pour saturer la régulation
  // Initialisation des zones mortes
  zone_morte_D = 12;
  zone_morte_G = 12;
+
+ Ind_perfo = 0.7;
 // ------------------------------									
 #elif defined BRICK_AND_STEEL
 // ------------------------------
-cde_max = 100;				// %	Commande maximum normalisée pour saturer la régulation
- cde_min = -100 ;			// %	Commande minimum normalisée pour saturer la régulation
- kp_distance =  1.7;		// 		Gain proportionnel pour la régulation en distance
- ki_distance =  3.0;		// 		Gain intégral pour la régulation en distance
- kp_angle =  20;			// 		Gain proportionnel pour la régulation en angle
- ki_angle =  10;			// 		Gain intégral pour la régulation en angle
+ cde_max = 80;				// %	Commande maximum normalisée pour saturer la régulation
+ cde_min = -80 ;			// %	Commande minimum normalisée pour saturer la régulation
+ kp_distance =  0.7;		// 		1,7 Gain proportionnel pour la régulation en distance
+ ki_distance =  3;		// 		Gain intégral pour la régulation en distance
+ kp_angle =  6;			// 		Gain proportionnel pour la régulation en angle
+ ki_angle =  0.2;			// 		Gain intégral pour la régulation en angle
  k_angle = 0.5;				//		Coeff de filtrage pour le terme dérivé
  seuil_conv_distance =  1;	// cm	Erreur en dessous de laquelle on considère que le robot est en position sur la distance
  seuil_conv_angle =  0.02;	// rad	Erreur en dessous de laquelle on considère que le robot est en position sur l'angle
  compteur_max = 3;			// 		Nombre de coups d'horloge (N*te) avant de confirmer que le robot est en position
 
  // Initialisation des zones mortes
- zone_morte_D = 12;
- zone_morte_G = 12;
+ zone_morte_D = 55;
+ zone_morte_G = 55;
+
+ Ind_perfo = 0.2;
 // ------------------------------
 #endif
  
@@ -191,7 +195,6 @@ cde_max = 100;				// %	Commande maximum normalisée pour saturer la régulation
  offset_vitesse_rotation = 0;			//	[rad/s-2]
  vitesse_avance_max = 80;				//	[cm/s]
  vitesse_rotation_max = 3;				//	[rad/s]
- Ind_perfo = 0.7;
 
  // Initialisation des valeurs par défauts des tableaux
  for (i=0; i<NBRE_POINTS_CARTO_ERREUR; i++) {

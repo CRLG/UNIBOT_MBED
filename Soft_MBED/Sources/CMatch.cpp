@@ -9,7 +9,7 @@
 #include "ConfigSpecifiqueCoupe.h"
 
 //extern "C" {
-// #include "ModeleRobot.h"  		// Le code gÃ©nÃ©rÃ© par Matlab Simulink est en "C" et pas en "C++"
+// #include "ModeleRobot.h"  		// Le code généré par Matlab Simulink est en "C" et pas en "C++"
 //}
 
 //___________________________________________________________________________
@@ -39,7 +39,7 @@ CMatch::~CMatch()
 
 //___________________________________________________________________________
  /*!
-   \brief Initialise toutes les structures de donnÃ©ess du match Ã  jouer
+   \brief Initialise toutes les structures de donnéess du match à jouer
 
    \param --
    \return --
@@ -135,7 +135,11 @@ void CMatch::step(void)
 {
     #ifdef THALBOT
 	
-	//____________________________
+    //____________________________
+    //Variables de l'Ecran
+    //m_iaSCI->set_iN_Couleur(m_couleur_equipe);
+
+    //____________________________
     //capteurs US
 	//pour les obstacles on ne passe plus un booleen a la strategie mais la distance
     m_obstacle_AVG=Application.m_capteurs.m_telemetres.m_distance[0];

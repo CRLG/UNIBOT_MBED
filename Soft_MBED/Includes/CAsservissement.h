@@ -16,10 +16,10 @@
 // ------------------------------									
 #elif defined BRICK_AND_STEEL
 // ------------------------------
-#define DISTANCE_PAR_PAS_CODEUR_G					0.00325568		// Roue gauche
-#define DISTANCE_PAR_PAS_CODEUR_D					0.00325568		// Roue droite
-#define VOIE_ROBOT								31.6867261			// Distance entre les 2 roues [cm]
-#define FACTEUR_CONV_DELTA_DIST_VERS_ANGLE		(1 / VOIE_ROBOT)	// (2 * Pi) / ( 2 * Pi * VOIE_ROBOT) => Resultat en rad		
+#define DISTANCE_PAR_PAS_CODEUR_G					0.00393		// Roue gauche
+#define DISTANCE_PAR_PAS_CODEUR_D					0.00393		// Roue droite
+#define VOIE_ROBOT								24.0			// Distance entre les 2 roues [cm]
+#define FACTEUR_CONV_DELTA_DIST_VERS_ANGLE		(1 / VOIE_ROBOT)	// (2 * Pi) / ( 2 * Pi * VOIE_ROBOT) => Resultat en rad
 // ------------------------------
 #endif
 
