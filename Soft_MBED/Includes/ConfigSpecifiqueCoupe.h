@@ -15,7 +15,7 @@
 // ------------------------------
 // Affectation des sorties moteurs
 typedef enum {
-   MOTEUR_ROUE_GAUCHE = MOTEUR_1,
+   MOTEUR_ROUE_GAUCHE = 1,
    MOTEUR_ROUE_DROITE,  // MOTEUR_2
    MOTEUR_CHARIOT, 	// MOTEUR_3
    MOTEUR_MOELDAR, 	// MOTEUR_4
@@ -26,7 +26,7 @@ typedef enum {
 
 // Affectation des codeurs de position
 typedef enum {
-   CODEUR_NON_DEFINI  =   CODEUR_1,
+   CODEUR_NON_DEFINI  =   1,
    CODEUR_CHARIOT,    // CODEUR_2
    CODEUR_ROUE_DROITE,  // CODEUR_3
    CODEUR_ROUE_GAUCHE   // CODEUR_4
@@ -58,7 +58,7 @@ typedef enum {
 // ------------------------------
 // Affectation des sorties moteurs
 typedef enum {
-   MOTEUR_ROUE_GAUCHE = MOTEUR_1,
+   MOTEUR_ROUE_GAUCHE = 1,
    MOTEUR_ROUE_DROITE,  // MOTEUR_2
    MOTEUR_CHARIOT, 	// MOTEUR_3
    MOTEUR_MOELDAR, 	// MOTEUR_4
@@ -69,7 +69,7 @@ typedef enum {
 
 // Affectation des codeurs de position
 typedef enum {
-   CODEUR_NON_DEFINI  =   CODEUR_1,
+   CODEUR_NON_DEFINI  =   1,
    CODEUR_CHARIOT,    // CODEUR_2
    CODEUR_ROUE_DROITE,  // CODEUR_3
    CODEUR_ROUE_GAUCHE   // CODEUR_4

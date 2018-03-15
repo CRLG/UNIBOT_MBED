@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<Project version="2G - 2.0.7" name="MiniBot">
-  <Target name="GrosBot" isCurrent="0">
+<Project version="2G - 2.0.7" name="UNIBOT">
+  <Target name="UNIBOT" isCurrent="0">
     <Device manufacturerId="7" manufacturerName="NXP" chipId="480" chipName="LPC1768" boardId="" boardName="" boardUrl="" coreId="" coreName=""/>
     <BuildOption>
       <Compile>
@@ -133,7 +133,7 @@
     </DebugOption>
     <ExcludeFile/>
   </Target>
-  <Target name="MiniBot" isCurrent="1">
+  <Target name="UNIBOT" isCurrent="1">
     <Device manufacturerId="7" manufacturerName="NXP" chipId="480" chipName="LPC1768" boardId="" boardName="" boardUrl="" coreId="" coreName=""/>
     <BuildOption>
       <Compile>

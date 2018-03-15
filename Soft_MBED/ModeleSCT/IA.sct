@@ -78,14 +78,14 @@
               <vertices xsi:type="sgraph:State" xmi:id="_AFxdsCtUEeerae2Nwy6ViA" specification="entry /&#xD;&#xA;asser.XYTeta(98,-155*invMouv,0);&#xD;&#xA;countTimeMvt=0&#xD;&#xA;" name="PRISE_MODULE_01" incomingTransitions="_H2fHAEK4Eee1r9mZOwprlg">
                 <outgoingTransitions xmi:id="_PRQwcCtUEeerae2Nwy6ViA" specification="[EV_ConvergenceMvt || countTimeMvt>(4/Te)]" target="_iOw3oAtmEeW5mMGjGGMYiA"/>
               </vertices>
-              <vertices xsi:type="sgraph:State" xmi:id="_1jf8UCtUEeerae2Nwy6ViA" specification="entry /&#xD;&#xA;asser.XYTeta(105,-182.5*invMouv,(-PI/2)*invMouv);&#xD;&#xA;countTimeMvt=0&#xD;&#xA;exit /&#xD;&#xA;sequence1=false;&#xD;&#xA;invMouv=-invMouv;&#xD;&#xA;Couleur=BLEU" name="FIN_DEPLACEMENT_JAUNE" incomingTransitions="_85DHMEFFEeet_dFEY5sS6g">
+              <vertices xsi:type="sgraph:State" xmi:id="_1jf8UCtUEeerae2Nwy6ViA" specification="entry /&#xD;&#xA;asser.XYTeta(105,-182.5*invMouv,(-PI/2)*invMouv);&#xD;&#xA;countTimeMvt=0&#xD;&#xA;exit /&#xD;&#xA;sequence1=false;&#xD;&#xA;invMouv=-invMouv;&#xD;&#xA;Couleur=VERT" name="FIN_DEPLACEMENT_JAUNE" incomingTransitions="_85DHMEFFEeet_dFEY5sS6g">
                 <outgoingTransitions xmi:id="_AKM1QCtVEeerae2Nwy6ViA" specification="[EV_ConvergenceMvt || countTimeMvt>(3/Te)]" target="_W_ZGUCZdEeeS3tPmkHGiPg"/>
               </vertices>
               <vertices xsi:type="sgraph:Choice" xmi:id="_2Z5ScEFFEeet_dFEY5sS6g" incomingTransitions="_X4rewCZdEeeS3tPmkHGiPg">
-                <outgoingTransitions xmi:id="_85DHMEFFEeet_dFEY5sS6g" specification="[IN_Couleur==JAUNE]" target="_1jf8UCtUEeerae2Nwy6ViA"/>
-                <outgoingTransitions xmi:id="_M93OoEFGEeet_dFEY5sS6g" specification="[IN_Couleur==BLEU]" target="_JSGHjEFGEeet_dFEY5sS6g"/>
+                <outgoingTransitions xmi:id="_85DHMEFFEeet_dFEY5sS6g" specification="[IN_Couleur==ORANGE]" target="_1jf8UCtUEeerae2Nwy6ViA"/>
+                <outgoingTransitions xmi:id="_M93OoEFGEeet_dFEY5sS6g" specification="[IN_Couleur==VERT]" target="_JSGHjEFGEeet_dFEY5sS6g"/>
               </vertices>
-              <vertices xsi:type="sgraph:State" xmi:id="_JSGHjEFGEeet_dFEY5sS6g" specification="entry /&#xD;&#xA;asser.XYTeta(105,-183.5*invMouv,(-PI/2)*invMouv);&#xD;&#xA;countTimeMvt=0&#xD;&#xA;exit /&#xD;&#xA;sequence1=false;&#xD;&#xA;invMouv=-invMouv;&#xD;&#xA;Couleur=JAUNE" name="FIN_DEPLACEMENT_BLEU" incomingTransitions="_M93OoEFGEeet_dFEY5sS6g">
+              <vertices xsi:type="sgraph:State" xmi:id="_JSGHjEFGEeet_dFEY5sS6g" specification="entry /&#xD;&#xA;asser.XYTeta(105,-183.5*invMouv,(-PI/2)*invMouv);&#xD;&#xA;countTimeMvt=0&#xD;&#xA;exit /&#xD;&#xA;sequence1=false;&#xD;&#xA;invMouv=-invMouv;&#xD;&#xA;Couleur=VERT" name="FIN_DEPLACEMENT_BLEU" incomingTransitions="_M93OoEFGEeet_dFEY5sS6g">
                 <outgoingTransitions xmi:id="_SDMwwEFGEeet_dFEY5sS6g" specification="[EV_ConvergenceMvt || countTimeMvt>(3/Te)]" target="_W_ZGUCZdEeeS3tPmkHGiPg"/>
               </vertices>
             </regions>
@@ -225,26 +225,26 @@
                 <outgoingTransitions xmi:id="_LA4JcEGGEeek6aW_ddcLkg" specification="oncycle" target="_4d238D1YEeeAwYpJAWk5WQ"/>
               </vertices>
               <vertices xsi:type="sgraph:Choice" xmi:id="_wuM7UEGPEeek6aW_ddcLkg" incomingTransitions="_r18FsD87EeePY4PxRmoAHw">
-                <outgoingTransitions xmi:id="_ApEckEGQEeek6aW_ddcLkg" specification="[Couleur==JAUNE]" target="_gM4X4D87EeePY4PxRmoAHw"/>
-                <outgoingTransitions xmi:id="_WjqroEGQEeek6aW_ddcLkg" specification="[Couleur==BLEU]" target="_PQWGbT1bEeeAwYpJAWk5WQ"/>
+                <outgoingTransitions xmi:id="_ApEckEGQEeek6aW_ddcLkg" specification="[Couleur==ORANGE]" target="_gM4X4D87EeePY4PxRmoAHw"/>
+                <outgoingTransitions xmi:id="_WjqroEGQEeek6aW_ddcLkg" specification="[Couleur==VERT]" target="_PQWGbT1bEeeAwYpJAWk5WQ"/>
               </vertices>
               <vertices xsi:type="sgraph:Choice" xmi:id="_MOAfYEGQEeek6aW_ddcLkg" incomingTransitions="_iJYg0D87EeePY4PxRmoAHw">
-                <outgoingTransitions xmi:id="_Q77nEEGQEeek6aW_ddcLkg" specification="[Couleur==JAUNE]" target="_PQWGbT1bEeeAwYpJAWk5WQ"/>
-                <outgoingTransitions xmi:id="_Sr2FgEGQEeek6aW_ddcLkg" specification="[Couleur==BLEU]" target="_gM4X4D87EeePY4PxRmoAHw"/>
+                <outgoingTransitions xmi:id="_Q77nEEGQEeek6aW_ddcLkg" specification="[Couleur==ORANGE]" target="_PQWGbT1bEeeAwYpJAWk5WQ"/>
+                <outgoingTransitions xmi:id="_Sr2FgEGQEeek6aW_ddcLkg" specification="[Couleur==VERT]" target="_gM4X4D87EeePY4PxRmoAHw"/>
               </vertices>
               <vertices xsi:type="sgraph:State" xmi:id="_90zvzUGQEeek6aW_ddcLkg" specification="entry /&#xD;&#xA;ax.setPos(AX_ROTATION,200);&#xD;&#xA;countTempo=0" name="RANGE_BRAS_01" incomingTransitions="_hXlx0D4aEeeAwYpJAWk5WQ">
                 <outgoingTransitions xmi:id="_BHExwEGREeek6aW_ddcLkg" specification="[countTempo>(2/Te)]" target="_aYOL_T4aEeeAwYpJAWk5WQ"/>
               </vertices>
               <vertices xsi:type="sgraph:Choice" xmi:id="_cA9lUEGREeek6aW_ddcLkg" incomingTransitions="_31qSsD1cEeeAwYpJAWk5WQ">
-                <outgoingTransitions xmi:id="_94lnEEGREeek6aW_ddcLkg" specification="[Couleur==JAUNE]" target="_T6RCbT1cEeeAwYpJAWk5WQ"/>
-                <outgoingTransitions xmi:id="_EUVigEGSEeek6aW_ddcLkg" specification="[Couleur==BLEU]" target="_BbP1jUGSEeek6aW_ddcLkg"/>
+                <outgoingTransitions xmi:id="_94lnEEGREeek6aW_ddcLkg" specification="[Couleur==ORANGE]" target="_T6RCbT1cEeeAwYpJAWk5WQ"/>
+                <outgoingTransitions xmi:id="_EUVigEGSEeek6aW_ddcLkg" specification="[Couleur==VERT]" target="_BbP1jUGSEeek6aW_ddcLkg"/>
               </vertices>
               <vertices xsi:type="sgraph:State" xmi:id="_BbP1jUGSEeek6aW_ddcLkg" specification="entry /&#xD;&#xA;ax.setPos(AX_ROTATION,200);&#xD;&#xA;countTempo=0&#xD;&#xA;" name="Copy_1_TOURNE_POUR_FUSEE" incomingTransitions="_EUVigEGSEeek6aW_ddcLkg">
                 <outgoingTransitions xmi:id="_mSmzQEGcEeek6aW_ddcLkg" specification="[countTempo>(1/Te)]" target="_45jM_UFfEeek6aW_ddcLkg"/>
               </vertices>
               <vertices xsi:type="sgraph:Choice" xmi:id="_bcvBcEGSEeek6aW_ddcLkg" incomingTransitions="_dCx0ID1eEeeAwYpJAWk5WQ">
-                <outgoingTransitions xmi:id="_dkwd4EGSEeek6aW_ddcLkg" specification="[Couleur==JAUNE]" target="_YCLBDT1eEeeAwYpJAWk5WQ"/>
-                <outgoingTransitions xmi:id="_j8nX0EGSEeek6aW_ddcLkg" specification="[Couleur==BLEU]" target="_gI-HHUGSEeek6aW_ddcLkg"/>
+                <outgoingTransitions xmi:id="_dkwd4EGSEeek6aW_ddcLkg" specification="[Couleur==ORANGE]" target="_YCLBDT1eEeeAwYpJAWk5WQ"/>
+                <outgoingTransitions xmi:id="_j8nX0EGSEeek6aW_ddcLkg" specification="[Couleur==VERT]" target="_gI-HHUGSEeek6aW_ddcLkg"/>
               </vertices>
               <vertices xsi:type="sgraph:State" xmi:id="_gI-HHUGSEeek6aW_ddcLkg" specification="entry /&#xD;&#xA;ax.setPos(AX_ROTATION,800);&#xD;&#xA;countTempo=0" name="Copy_1_AU_DESSUS_ZONE" incomingTransitions="_j8nX0EGSEeek6aW_ddcLkg">
                 <outgoingTransitions xmi:id="_zhEYoEGcEeek6aW_ddcLkg" specification="[countTempo>(1/Te)]" target="_u0Hu3T1eEeeAwYpJAWk5WQ"/>
