@@ -24,7 +24,8 @@ public :
     unsigned char m_choix_strategie;
     float m_old_cde_mot[NBRE_MAX_MOTEURS+1]; // +1 par facilit√© de lecture du code car l'index utilis√© MOTEUR_1, ... commence √  1 et pas √  "0"
     float m_old_cde_servo[NBRE_SERVOS_SD20+1]; // +1 (m√™me explication)
-	int m_obstacleDetecte;   
+    int m_obstacleDetecte;
+    int m_score;
 
 	CMatch();
 	~CMatch();

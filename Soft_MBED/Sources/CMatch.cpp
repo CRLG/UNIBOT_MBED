@@ -74,6 +74,8 @@ void CMatch::Initialise(void)
     m_convergence_rack_conf=0;
 
     m_obstacleDetecte=0;
+
+    m_score=357;
 	
 	#ifdef THALBOT
 		// ------------------------------
